@@ -91,11 +91,17 @@ Ben bunların yanında cüzdan dosyalarını da yedekledim nolur nolmaz. Onu da 
 Kendi bilgisayarımızdaki yedek klasörümüzün içinde 2 tane dosya olmuş oldu, birisi `.near` diğeri `.near-credentials`
 
 
-# Yeni bir `commit` güncellemesi geldi. Bunun için aşağıdaki kodu olduğu gibi yapıştırıyoruz. Biraz uzun sürecektir:
+# Yeni bir `commit` güncellemesi geldi. Bunun için aşağıdaki komutları tek tek giriyoruz:
+
+Sistemi durduralım.
 
 ```
 sudo systemctl stop neard
+```
 
+Güncellemeyi yapalım. Burası biraz uzun sürebilir.
+
+```
 cd $HOME/nearcore
 
 git fetch
@@ -103,7 +109,11 @@ git fetch
 git checkout 68bfa84ed1455f891032434d37ccad696e91e4f5
 
 cargo build -p neard --release --features shardnet
+```
 
+Sistemi tekrar başlatalım.
+
+```
 sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
 ```
 
