@@ -140,6 +140,8 @@ cargo build -p neard --release --features shardnet
 Sistemi tekrar başlatalım.
 
 ```
+sudo systemctl daemon-reload
+sudo systemctl restart neard
 sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
 ```
 
