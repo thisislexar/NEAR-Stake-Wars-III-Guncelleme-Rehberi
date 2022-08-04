@@ -91,34 +91,6 @@ Ben bunların yanında cüzdan dosyalarını da yedekledim nolur nolmaz. Onu da 
 Kendi bilgisayarımızdaki yedek klasörümüzün içinde 2 tane dosya olmuş oldu, birisi `.near` diğeri `.near-credentials`
 
 
-# Yeni bir `commit` güncellemesi geldi. Bunun için aşağıdaki komutları tek tek giriyoruz:
-
-Sistemi durduralım.
-
-```
-sudo systemctl stop neard
-```
-
-Güncellemeyi yapalım. Burası biraz uzun sürebilir.
-
-```
-cd $HOME/nearcore
-
-git fetch
-
-git checkout 68bfa84ed1455f891032434d37ccad696e91e4f5
-
-cargo build -p neard --release --features shardnet
-```
-
-Sistemi tekrar başlatalım.
-
-```
-sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
-```
-
-Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demektir.
-
 
 # `config.json` dosyası için yeni bir güncelleme yayınlandı. Aşağıdaki komutları sırayla girelim:
 
@@ -137,6 +109,35 @@ wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotoco
 ```
 
 Sistemi tekrar başlatıyoruz.
+
+```
+sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
+```
+
+Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demektir.
+
+
+# Yeni bir `commit` güncellemesi geldi. Bunun için aşağıdaki komutları tek tek giriyoruz:
+
+Sistemi durduralım.
+
+```
+sudo systemctl stop neard
+```
+
+Güncellemeyi yapalım. Burası biraz uzun sürebilir.
+
+```
+cd $HOME/nearcore
+
+git fetch
+
+git checkout 78ef2f55857d6118047efccf070ae0f7ddb232ea
+
+cargo build -p neard --release --features shardnet
+```
+
+Sistemi tekrar başlatalım.
 
 ```
 sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
