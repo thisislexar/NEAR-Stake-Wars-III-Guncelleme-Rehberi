@@ -140,9 +140,10 @@ cargo build -p neard --release --features shardnet
 Sistemi tekrar başlatalım.
 
 ```
+sudo systemctl start neard
 sudo systemctl daemon-reload
 sudo systemctl restart neard
-sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
+journalctl -n 100 -f -u neard | ccze -A
 ```
 
 Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demektir.
