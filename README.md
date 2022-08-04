@@ -118,3 +118,28 @@ sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
 ```
 
 Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demektir.
+
+
+# `config.json` dosyası için yeni bir güncelleme yayınlandı. Aşağıdaki komutları sırayla girelim:
+
+Sistemi durduruyoruz.
+
+```
+sudo systemctl stop neard
+```
+
+Mevcut `config.json` dosyasını silip yeni `config.json` dosyasını indiriyoruz.
+
+```
+cd ~/.near
+rm ~/.near/config.json
+wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
+```
+
+Sistemi tekrar başlatıyoruz.
+
+```
+sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
+```
+
+Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demektir.
