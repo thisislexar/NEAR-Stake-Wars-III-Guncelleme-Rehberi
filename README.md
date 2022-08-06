@@ -132,7 +132,7 @@ cd $HOME/nearcore
 
 git fetch
 
-git checkout 78ef2f55857d6118047efccf070ae0f7ddb232ea
+git checkout 68bfa84ed1455f891032434d37ccad696e91e4f5
 
 cargo build -p neard --release --features shardnet
 ```
