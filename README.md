@@ -84,11 +84,11 @@ Ben bunların yanında cüzdan dosyalarını da yedekledim nolur nolmaz. Onu da 
 
 `root` yazısına tıklayıp root dizinine dönüyoruz.
 
-![image](https://user-images.githubusercontent.com/101462877/181651407-78006d87-5a1d-43a3-8956-2e13b454393d.png)
+![image](https://user-images.githubusercontent.com/101462877/183651093-d2ffc1a3-48dc-41dc-b9d5-1f1cefb1dc3c.png)
 
-`.near-credentials` klasörünü doğrudan kopyalayıp masaüstünde açtığımız klasör içine atıyoruz.
+`.near-credentials` ve `.near-config` klasörlerini doğrudan kopyalayıp masaüstünde açtığımız klasör içine atıyoruz.
 
-Kendi bilgisayarımızdaki yedek klasörümüzün içinde 2 tane dosya olmuş oldu, birisi `.near` diğeri `.near-credentials`
+Kendi bilgisayarımızdaki yedek klasörümüzün içinde 3 tane dosya olmuş oldu, `.near`, `.near-credentials` ve `.near-config`
 
 
 
