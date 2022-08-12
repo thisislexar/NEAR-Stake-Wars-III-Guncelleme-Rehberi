@@ -173,7 +173,7 @@ Her zamanki gibi WinSCP ya da Cyberduck ile sunucumuza bağlanıyoruz. Sunucu ad
 Kenara bir not defteri açıyoruz ve aşağıdaki komutu bu not defterine yapıştırıyoruz.
 
 ```
-“public_addrs”:[“yyyyyyyyy@xxxxxxxxx:24567”],
+"public_addrs":["yyyyyyyyy@xxxxxxxxx:24567"],
 ```
 
 ![image](https://user-images.githubusercontent.com/101462877/184237677-d2ed41de-61f6-4a9f-9d6b-a80436255ed7.png)
