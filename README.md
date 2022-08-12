@@ -151,15 +151,6 @@ Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demekt
 
 # YENİ GÜNCELLEME
 
-## BU GÜNCELLEMEYİ EĞER NODE'UNUZ SYNC İSE YAPIN. SYNC OLMAYAN BİR NODE'DA DENEDİĞİMDE SORUN ÇIKTI, EMİN OLMAMAKLA BERABER SORUNUN NODE SYNC OLMADIĞI İÇİN OLDUĞUNU DÜŞÜNÜYORUM. SYNC OLUP OLMADIĞINI KONTROL ETMEK İÇİN AŞAĞIDAKİ KOMUT:
-
-```
-curl -s http://127.0.0.1:3030/status | jq .sync_info
-```
-![image](https://user-images.githubusercontent.com/101462877/184243657-cd28d2d5-205d-466b-9050-f85981cdb3e6.png)
-
-Okla gösterdiğim kısım `false` ise node'unuz sync olmuştur. Devam edebilirsiniz.
-
 # Validatör'den validatöre iletişimi artırmak için bir güncelleme eklendi. Detaylar için [buraya](https://docs.google.com/document/d/1RDd9ETfLQL_JfnEePmUPjkLvIxAtLV-c5AKWV8IMJEo/edit#heading=h.x8zofr2t0ji1) bakabilirsiniz.
 
 Sıra sıra acele etmeden dikkatlice yapın, tek bir virgülü unutmanız durumunda bir şeyler ters gidecektir.
