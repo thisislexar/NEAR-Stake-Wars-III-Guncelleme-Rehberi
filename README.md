@@ -29,7 +29,7 @@ rm ~/.near/data/*
 ```
 cd ~/nearcore
 git fetch
-git checkout 68bfa84ed1455f891032434d37ccad696e91e4f5
+git checkout f7f0cb22e85e9c781a9c71df7dcb17f507ff6fde 
 cargo build -p neard --release --features shardnet
 ```
 
@@ -117,38 +117,6 @@ sudo systemctl start neard && journalctl -n 100 -f -u neard | ccze -A
 Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demektir.
 
 
-# Yeni bir `commit` güncellemesi geldi. Bunun için aşağıdaki komutları tek tek giriyoruz:
-
-Sistemi durduralım.
-
-```
-sudo systemctl stop neard
-```
-
-Güncellemeyi yapalım. Burası biraz uzun sürebilir.
-
-```
-cd $HOME/nearcore
-
-git fetch
-
-git checkout 68bfa84ed1455f891032434d37ccad696e91e4f5
-
-cargo build -p neard --release --features shardnet
-```
-
-Sistemi tekrar başlatalım.
-
-```
-sudo systemctl start neard
-sudo systemctl daemon-reload
-sudo systemctl restart neard
-journalctl -n 100 -f -u neard | ccze -A
-```
-
-Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demektir.
-
-
 # YENİ GÜNCELLEME
 
 # Validatör'den validatöre iletişimi artırmak için bir güncelleme eklendi. Detaylar için [buraya](https://docs.google.com/document/d/1RDd9ETfLQL_JfnEePmUPjkLvIxAtLV-c5AKWV8IMJEo/edit#heading=h.x8zofr2t0ji1) bakabilirsiniz.
@@ -219,5 +187,36 @@ sudo systemctl restart neard
 systemctl restart systemd-journald.service
 journalctl -n 100 -f -u neard | ccze -A
 ```
+
+# Yeni bir `commit` güncellemesi geldi. Bunun için aşağıdaki komutları tek tek giriyoruz:
+
+Sistemi durduralım.
+
+```
+sudo systemctl stop neard
+```
+
+Güncellemeyi yapalım. Burası biraz uzun sürebilir.
+
+```
+cd $HOME/nearcore
+
+git fetch
+
+git checkout f7f0cb22e85e9c781a9c71df7dcb17f507ff6fde
+
+cargo build -p neard --release --features shardnet
+```
+
+Sistemi tekrar başlatalım.
+
+```
+sudo systemctl start neard
+sudo systemctl daemon-reload
+sudo systemctl restart neard
+journalctl -n 100 -f -u neard | ccze -A
+```
+
+Logların akışı düzgün ise güncellemeyi başarıyla yapmışsınız demektir.
 
 ## İşlemler bu kadardı, yeni güncellemelerde görüşmek üzere. Lexar out✌️
