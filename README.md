@@ -196,6 +196,14 @@ Sistemi durduralım.
 sudo systemctl stop neard
 ```
 
+Önce bu komutu giriyoruz.
+
+```
+cd $HOME
+
+curl -sf -L https://static.rust-lang.org/rustup.sh | sh
+```
+
 Güncellemeyi yapalım. Burası biraz uzun sürebilir.
 
 ```
