@@ -204,6 +204,14 @@ cd $HOME
 curl -sf -L https://static.rust-lang.org/rustup.sh | sh
 ```
 
+![image](https://user-images.githubusercontent.com/101462877/184948404-f5550eab-66bc-4f70-bafe-ea2e0ae7fb4d.png)
+
+Burada `y` diyoruz ve `Enter`'lıyoruz.
+
+![image](https://user-images.githubusercontent.com/101462877/184948450-29b83de4-5a7f-4c34-8d74-fb1a8e10821a.png)
+
+Burada `1` diyip `Enter`lıyoruz.
+
 Güncellemeyi yapalım. Burası biraz uzun sürebilir.
 
 ```
