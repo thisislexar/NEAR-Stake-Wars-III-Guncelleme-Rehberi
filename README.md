@@ -215,6 +215,8 @@ Burada `1` diyip `Enter`lıyoruz.
 Güncellemeyi yapalım. Burası biraz uzun sürebilir.
 
 ```
+source $HOME/.cargo/env
+
 cd $HOME/nearcore
 
 git fetch
