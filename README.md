@@ -232,6 +232,7 @@ Sistemi tekrar başlatalım.
 sudo systemctl start neard
 sudo systemctl daemon-reload
 sudo systemctl restart neard
+systemctl restart systemd-journald.service
 journalctl -n 100 -f -u neard | ccze -A
 ```
 
