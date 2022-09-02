@@ -29,7 +29,7 @@ rm ~/.near/data/*
 ```
 cd ~/nearcore
 git fetch
-git checkout 24cbb11ce1e14aa267f787f011935a4465d3537d 
+git checkout 1897d5144a7068e4c0d5764d8c9180563db2fe43 
 cargo build -p neard --release --features shardnet
 ```
 
@@ -221,7 +221,7 @@ cd $HOME/nearcore
 
 git fetch
 
-git checkout 24cbb11ce1e14aa267f787f011935a4465d3537d
+git checkout 1897d5144a7068e4c0d5764d8c9180563db2fe43
 
 cargo build -p neard --release --features shardnet
 ```
